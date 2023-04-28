@@ -4,3 +4,4 @@ export { default as VideoDetails } from "./VideoDetails";
 export { default as ChannelDetails } from "./ChannelDetails";
 export { default as SearchResults } from "./SearchResults";
 export { default as NotFound } from "./NotFound";
+export { default as SearchField } from "./SearchField";
