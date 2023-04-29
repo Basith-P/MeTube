@@ -2,9 +2,12 @@ import { Stack } from "@mui/material";
 
 import { categories } from "../utils/constants";
 
-const selectedCategory = "New";
+interface SidebarProps {
+  selectedCategory: string;
+  setSelectedCategory: (category: string) => void;
+}
 
-const Sidebar = () => (
+const Sidebar = ({ selectedCategory, setSelectedCategory }: SidebarProps) => (
   <Stack
     sx={{
       overflowY: "scroll",
@@ -21,6 +24,7 @@ const Sidebar = () => (
           backgroundColor:
             selectedCategory === category.name ? "#3d3d3d" : "transparent",
         }}
+        onClick={() => setSelectedCategory(category.name)}
       >
         <span style={{ marginRight: 10 }}>{category.icon}</span>
         <span

@@ -7,3 +7,5 @@ export { default as NotFound } from "./NotFound";
 export { default as SearchField } from "./SearchField";
 export { default as Sidebar } from "./Sidebar";
 export { default as Videos } from "./Videos";
+export { default as VideoCard } from "./VideoCard";
+export { default as ChannelCard } from "./ChannelCard";
